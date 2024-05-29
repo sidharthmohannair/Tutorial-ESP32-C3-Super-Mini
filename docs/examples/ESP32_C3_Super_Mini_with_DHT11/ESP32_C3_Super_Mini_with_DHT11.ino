@@ -7,7 +7,7 @@
 /*
   ESP32-C3 Super Mini with DHT11
 
-  Turns an LED on for two seconds, then off for one second, repeatedly.
+  Serial Print the DHT11 / DHT22 values in Serial Monitor
   This is code modified by Sidharth Mohan : https://github.com/sidharthmohannair/
 */
 #include "DHT.h"
