@@ -27,6 +27,10 @@ The schematic diagram shows the connections between the ESP32-C3, the DHT11/DHT2
 You can find the full code in the repository, and you can also download the code folder for use.
 ```
 
+## Flow Chart
+
+![Schematic Diagram](images/flowchart.png)
+
 ## Code Explanation by Sections
 ### 1. Library Inclusions and Macros
 
@@ -164,28 +168,17 @@ void handle_NotFound() {
 
 ```cpp
 String SendHTML(String Temperaturestat, String Humiditystat) {
-  String ptr = "<!DOCTYPE html> <html>
-";
-  ptr += "<head><meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-";
-  ptr += "<title>ESP32 Temperature & Humidity</title>
-";
-  ptr += "<style>html { font-family: Helvetica; display: inline-block; margin: 0px auto; text-align: center;}
-";
-  ptr += "body{margin-top: 50px;} h1 {color: #444444;margin: 50px auto 30px;}
-";
-  ptr += "p {font-size: 24px;color: #444444;margin-bottom: 10px;}
-";
-  ptr += "</style>
-";
-  ptr += "</head>
-";
-  ptr += "<body>
-";
-  ptr += "<div id="webpage">
-";
-  ptr += "<h1>ESP32 Temperature & Humidity</h1>
-";
+  String ptr = "<!DOCTYPE html> <html>\n";
+  ptr += "<head><meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0, user-scalable=no\">\n";
+  ptr += "<title>ESP32 Temperature & Humidity</title>\n";
+  ptr += "<style>html { font-family: Helvetica; display: inline-block; margin: 0px auto; text-align: center;}\n";
+  ptr += "body{margin-top: 50px;} h1 {color: #444444;margin: 50px auto 30px;}\n";
+  ptr += "p {font-size: 24px;color: #444444;margin-bottom: 10px;}\n";
+  ptr += "</style>\n";
+  ptr += "</head>\n";
+  ptr += "<body>\n";
+  ptr += "<div id=\"webpage\">\n";
+  ptr += "<h1>ESP32 Temperature & Humidity</h1>\n";
 
   ptr += "<p>Temperature: ";
   ptr += Temperaturestat;
@@ -194,12 +187,9 @@ String SendHTML(String Temperaturestat, String Humiditystat) {
   ptr += Humiditystat;
   ptr += "%</p>";
 
-  ptr += "</div>
-";
-  ptr += "</body>
-";
-  ptr += "</html>
-";
+  ptr += "</div>\n";
+  ptr += "</body>\n";
+  ptr += "</html>\n";
   return ptr;
 }
 ```
