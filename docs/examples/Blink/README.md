@@ -6,7 +6,7 @@ This Arduino project demonstrates how to blink an LED using the ESP32-C3 super t
 
 The LED is connected to pin 8 as per the schematic below.
 
-![Blink Schematic](images/blink_schematic.png)
+![Blink Schematic](images/circuit.jpg)
 
 ## Components
 
