@@ -45,6 +45,10 @@ void loop() {
 4. Upload the code to the ESP32-C3 module.
 5. Observe the LED blinking on and off as per the code.
 
+## Result
+
+![Blink result](images/result.gif)
+
 ## Notes
 
 - Ensure you have the ESP32 board package installed in your Arduino IDE.
