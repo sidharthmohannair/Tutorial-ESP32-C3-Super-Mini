@@ -7,7 +7,7 @@ This project involves setting up an ESP32-C3 microcontroller to read temperature
 ## Schematic
 The schematic diagram shows the connections between the ESP32-C3, the DHT11/DHT22 sensor, and other necessary components.
 
-![Schematic Diagram](images/schematic.png)
+![Schematic Diagram](images/schematic_ESP32-C3_Super_Mini_with_DHT11.jpg)
 
 ## Components
 - ESP32-C3 Super Mini
@@ -29,7 +29,7 @@ You can find the full code in the repository, and you can also download the code
 
 ## Flow Chart
 
-![Schematic Diagram](images/flowchart_web.png)
+![Flowchart Diagram](images/flowchart_web.png)
 
 ## Code Explanation by Sections
 ### 1. Library Inclusions and Macros
@@ -57,8 +57,9 @@ You can find the full code in the repository, and you can also download the code
 ### 3. Wi-Fi Credentials
 
 ```cpp
-const char* ssid = "POCO F5";       // Enter your WiFi SSID
-const char* password = "987456321";     // Enter your WiFi password
+/* Put your SSID & Password */
+const char* ssid = "Your WiFi Name";       // Enter your WiFi SSID
+const char* password = " Your WiFi Password";     // Enter your WiFi password
 ```
 
 - **ssid**: The name of the Wi-Fi network to connect to.
@@ -221,6 +222,12 @@ String SendHTML(String Temperaturestat, String Humiditystat) {
 ## Result
 
 When the project is running, the ESP32-C3 will display real-time temperature and humidity data from the DHT sensor on a web page accessible via the device's IP address.
+
+![Serial Monitor Output](images/result.png)
+
+![Mobile Output](images/result_mobile.jpg)
+
+![Hardware Diagram](images/hardware_ESP32-C3_Super_Mini_with_DHT11.jpg)
 
 ## Additional Notes
 

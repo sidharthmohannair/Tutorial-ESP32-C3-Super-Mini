@@ -14,8 +14,8 @@
 //#define DHTTYPE DHT22   // DHT 22 (AM2302), AM2321
 
 /* Put your SSID & Password */
-const char* ssid = "POCO F5";       // Enter your WiFi SSID
-const char* password = "987456321";     // Enter your WiFi password
+const char* ssid = "Your WiFi Name";       // Enter your WiFi SSID
+const char* password = " Your WiFi Password";     // Enter your WiFi password
 
 WebServer server(80); // Create a web server object that listens for HTTP requests on port 80
 
@@ -30,7 +30,7 @@ float Humidity;
 
 // Debug Macros for easy debugging
 // uncomment "#define DEBUG" this for activate debug
-//#define DEBUG
+#define DEBUG
 #ifdef DEBUG
   #define DEBUG_PRINT(x) Serial.print(x)
   #define DEBUG_PRINTLN(x) Serial.println(x)
