@@ -238,6 +238,5 @@ When the project is running, the ESP32-C3 will display real-time temperature and
 ## Resources
 
 - [ESP32-C3 Datasheet](https://www.espressif.com/sites/default/files/documentation/esp32-c3_datasheet_en.pdf)
-- [DHT11 Datasheet](https://cdn-shop.adafruit.com/datasheets/DHT11-chinese.pdf)
-- [DHT22 Datasheet](https://cdn-shop.adafruit.com/datasheets/DHT22.pdf)
+- [DHT11 & DHT22 Datasheet](https://cdn-learn.adafruit.com/downloads/pdf/dht.pdf)
 - [Arduino IDE Installation Guide](https://www.arduino.cc/en/Guide/HomePage)
