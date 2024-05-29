@@ -29,7 +29,7 @@ You can find the full code in the repository, and you can also download the code
 
 ## Flow Chart
 
-![Schematic Diagram](images/flowchart.png)
+![Schematic Diagram](images/flowchart_web.png)
 
 ## Code Explanation by Sections
 ### 1. Library Inclusions and Macros
