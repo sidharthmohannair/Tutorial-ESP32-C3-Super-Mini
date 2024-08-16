@@ -29,6 +29,40 @@ Welcome to the comprehensive guide for the ESP32-C3 Super Mini board. This repos
 ![Pinout Diagram Top](/images/esp32_c3_supermini_pinout_top.jpg)
 ![Pinout Diagram Bottom](/images/esp32_c3_supermini_pinout_bot.jpg)
 
+## Interfaces
+
+The ESP32-C3 series supports the following interfaces:
+
+- **2x ADCs**: ADC1 (GPIO0-GPIO4), ADC2 (GPIO5, not usable with Wi-Fi enabled).
+- **6x PWM channels**: Configurable on any GPIO pins.
+- **2x UART**: Configurable on any GPIO pins.
+- **1x I²C**: Configurable on any GPIO pins.
+- **3x SPI**: SPI0 and SPI1 are reserved, SPI2 configurable on any GPIO pins.
+
+## Pin Mappings
+
+| Silkscreen Pin | Internal Pin | Notes                                   |
+|----------------|--------------|-----------------------------------------|
+| 0              | GPIO0        | ADC1                                    |
+| 1              | GPIO1        | ADC1                                    |
+| 2              | GPIO2        | ADC1, boot mode / strapping pin         |
+| 3              | GPIO3        | ADC1                                    |
+| 4              | GPIO4        | ADC1, JTAG                              |
+| 5              | GPIO5        | JTAG                                    |
+| 6              | GPIO6        | JTAG                                    |
+| 7              | GPIO7        | JTAG                                    |
+| 8              | GPIO8        | Blue status_led (inverted), boot mode / strapping pin   |
+| 9              | GPIO9        | Boot mode / strapping pin, boot button                             |
+| 10             | GPIO10       |                                         |
+| 20             | GPIO20       |                                         |
+| 21             | GPIO21       |                                         |
+
+### Pin Notes
+
+- GPIO8 has an inverted blue status LED.
+- The BOOT button is wired to GPIO9.
+- JTAG is available on GPIO4 to GPIO7.
+
 ## Getting Started
 
 ### Arduino IDE Setup
