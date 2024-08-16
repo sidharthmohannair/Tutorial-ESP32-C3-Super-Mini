@@ -14,7 +14,6 @@ Welcome to the comprehensive guide for the ESP32-C3 Super Mini board. This repos
 8. [License](#license)
 
 ## Introduction
-The ESP32-C3 Super Mini is a compact development board based on the ESP32-C3 microcontroller, providing WiFi and Bluetooth connectivity. This guide covers the board's specifications, pinouts, and instructions for setting up and programming with the Arduino IDE.
 
 ## Board Specifications
 - **Microcontroller**: ESP32-C3
@@ -41,11 +40,14 @@ The ESP32-C3 Super Mini is a compact development board based on the ESP32-C3 mic
 
 ## Example Projects
 - **Blink LED**: A basic example to blink an LED.
-  - Code: [blink.ino](examples/blink/blink.ino)
-- **WiFi Scanner**: Scans and displays available WiFi networks.
-  - Code: [wifi_scanner.ino](examples/wifi_scanner/wifi_scanner.ino)
-- **Bluetooth Beacon**: Sets up the board as a Bluetooth beacon.
-  - Code: [bluetooth_beacon.ino](examples/bluetooth_beacon/bluetooth_beacon.ino)
+  - Guide: [Blink Project](/docs/examples/Blink/README.md)
+  - Code: [blink.ino](/docs/examples/Blink/Blink.ino)
+- **ESP32 C3 Super Mini with DHT11**: Read DHT11 sensor to measure temperature and humidity.
+  - Guide: [ESP32 C3 Super Mini with DHT11](/docs/examples/ESP32_C3_Super_Mini_with_DHT11/README.md)
+  - Code: [ESP32_C3_Super_Mini_with_DHT11.ino](/docs/examples/ESP32_C3_Super_Mini_with_DHT11/ESP32_C3_Super_Mini_with_DHT11.ino)
+- **ESP32-C3 Super Mini with DHT11/DHT22 - Display Values Using Web Server**: To read temperature and humidity data from a DHT11/DHT22 sensor and display these values on a web server.
+  - Guide: [Read DHT11/DHT22 - Display Values Using Web Server](/docs/examples/ESP32_C3_Super_Mini_with_DHT11_webServer/README.md)
+  - Code: [ESP32_C3_Super_Mini_with_DHT11_webServer.ino](/docs/examples/ESP32_C3_Super_Mini_with_DHT11_webServer/ESP32_C3_Super_Mini_with_DHT11_webServer.ino)
 
 ## Troubleshooting
 - **Common Issues**:
