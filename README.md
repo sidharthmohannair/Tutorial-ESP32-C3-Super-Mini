@@ -25,7 +25,8 @@ The ESP32-C3 Super Mini is a compact development board based on the ESP32-C3 mic
 - **Operating Voltage**: 3.3V
 
 ## Pinout Diagram
-![Pinout Diagram](images/pinout.png)
+![Pinout Diagram Top](/images/esp32_c3_supermini_pinout_top.jpg)
+![Pinout Diagram Bottom](/images/esp32_c3_supermini_pinout_bot.jpg)
 
 ## Getting Started
 
@@ -57,5 +58,22 @@ The ESP32-C3 Super Mini is a compact development board based on the ESP32-C3 mic
 ## Contributing
 Contributions are welcome! Please fork this repository and submit a pull request with your improvements. Follow the [contributing guidelines](CONTRIBUTING.md).
 
+## References
+
+- [ESP32 C3 Super Mini Deatailed Board Summery](https://www.sudo.is/docs/esphome/boards/esp32c3supermini/#enter-bootloader-mode-to-program-over-usb)
+
+- [Espressif datasheets](https://www.espressif.com/en/support/documents/technical-documents)
+
+- [platformio/espressif32 boards](https://registry.platformio.org/platforms/platformio/espressif32/boards)
+
+- [ESPHome: ESP32 Platform](https://esphome.io/components/esp32)
+
+- [ESPHome: (ESP32 platform): ESP-IDF Framework](https://esphome.io/components/esp32.html#esp-idf-framework)
+
+- [esp32_c3_datasheet.pdf](https://www.sudo.is/docs/esphome/boards/esp32c3/esp32_c3_datasheet.pdf)
+
+
+
 ## License
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
