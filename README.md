@@ -15,6 +15,7 @@ Welcome to the comprehensive guide for the ESP32-C3 Super Mini board. This repos
 9. [License](#license)
 
 ## Introduction
+The ESP32-C3 Super Mini is a compact development board based on the ESP32-C3 microcontroller, providing WiFi and Bluetooth connectivity. This guide covers the board's specifications, pinouts, and instructions for setting up and programming with the Arduino IDE.
 
 ## Board Specifications
 - **Microcontroller**: ESP32-C3 FN4 (172023 P3L7730)
