@@ -11,13 +11,15 @@ Welcome to the comprehensive guide for the ESP32-C3 Super Mini board. This repos
 5. [Example Projects](#example-projects)
 6. [Troubleshooting](#troubleshooting)
 7. [Contributing](#contributing)
-8. [License](#license)
+8. [References](#references)
+9. [License](#license)
 
 ## Introduction
 
 ## Board Specifications
-- **Microcontroller**: ESP32-C3
-- **Connectivity**: WiFi, Bluetooth
+- **Microcontroller**: ESP32-C3 FN4 (172023 P3L7730)
+- **Connectivity**: WiFi (2.4 GHz b/g/n), Bluetooth (BLE 5)
+- **Processor**:	32-bit RISC-V single-core
 - **GPIO Pins**: 10 digital I/O, 2 analog inputs
 - **Power Supply**: 5V via USB, 3.3V via onboard regulator
 - **Flash Memory**: 4MB
