@@ -69,7 +69,7 @@ The ESP32-C3 series supports the following interfaces:
 - The BOOT button is wired to GPIO9.
 - JTAG is available on GPIO4 to GPIO7.
 
-## Getting Started
+# Getting Started
 
 ### Hardware Requirements
 
@@ -91,6 +91,12 @@ Before getting started, ensure you have the following components:
 
     > **Note:** If you're experiencing slow download speeds, consider using alternative download links provided by local Arduino communities.
 2. Install the Arduino IDE following the instructions for your operating system.
+
+### Optional Step: Install USB Drivers (Windows Only)
+1. **Windows Users Only:** Before connecting your ESP32-C3 Super Mini, ensure that the necessary USB-to-serial drivers are installed. This is especially important for Windows users.
+
+- You can download the CP210x or CH340 drivers from the official websites if your board uses one of these USB-to-UART bridge chips.
+- **Note:** Most modern versions of Windows will install the drivers automatically when you first connect the device.
 
 ### Step 2: Configure the Arduino IDE for ESP32-C3 Super Mini
 
@@ -129,6 +135,14 @@ Before getting started, ensure you have the following components:
 
 2. Go to **Tools > Port** and select the corresponding serial port for your device. This will usually be **COM3** or higher on Windows, and `/dev/ttyUSBx` or `/dev/ttyACMx` on Linux/macOS. 
 
+    **Optional: Enable USB CDC on Boot**
+    If you are experiencing issues with serial communication or your device is not being recognized correctly after a reset, you can enable the "USB CDC on Boot" option:
+
+    1. Go to Tools > USB CDC on Boot.
+    2. Select Enabled.
+
+   > **Note:** Enabling "USB CDC on Boot" allows the USB connection to remain active during boot, which can help resolve issues where the serial port is not detected after the ESP32-C3 restarts.
+
 ### Step 4: Verify the Setup
 
 1. Open a new sketch in the Arduino IDE.
@@ -137,22 +151,31 @@ Before getting started, ensure you have the following components:
 
 If everything is set up correctly, the LED on the ESP32-C3 should start blinking, indicating that the upload was successful.
 
-## Example Projects
-- **Blink LED**: A basic example to blink an LED.
+# Example Projects
+- ## **Blink LED**: 
+  **A basic example to blink an LED.**
+
   - Guide: [Blink Project](/docs/examples/Blink/README.md)
   - Code: [blink.ino](/docs/examples/Blink/Blink.ino)
-- **ESP32 C3 Super Mini with DHT11**: Read DHT11 sensor to measure temperature and humidity.
+- ## **ESP32 C3 Super Mini with DHT11**: 
+  **Read DHT11 sensor to measure temperature and humidity.**
+
   - Guide: [ESP32 C3 Super Mini with DHT11](/docs/examples/ESP32_C3_Super_Mini_with_DHT11/README.md)
   - Code: [ESP32_C3_Super_Mini_with_DHT11.ino](/docs/examples/ESP32_C3_Super_Mini_with_DHT11/ESP32_C3_Super_Mini_with_DHT11.ino)
-- **ESP32-C3 Super Mini with DHT11/DHT22 - Display Values Using Web Server**: To read temperature and humidity data from a DHT11/DHT22 sensor and display these values on a web server.
+- ## **ESP32-C3 Super Mini with DHT11/DHT22 - Display Values Using Web Server**: 
+  **To read temperature and humidity data from a DHT11/DHT22 sensor and display these values on a web server.**
+
   - Guide: [Read DHT11/DHT22 - Display Values Using Web Server](/docs/examples/ESP32_C3_Super_Mini_with_DHT11_webServer/README.md)
   - Code: [ESP32_C3_Super_Mini_with_DHT11_webServer.ino](/docs/examples/ESP32_C3_Super_Mini_with_DHT11_webServer/ESP32_C3_Super_Mini_with_DHT11_webServer.ino)
 
 ## Troubleshooting
 - **Common Issues**:
-  - Ensure the correct board and port are selected in the Arduino IDE.
-  - Check the USB connection and try different cables if necessary.
-  - Install the latest drivers for your operating system.
+  - If the port does not appear, try disconnecting and reconnecting the USB cable or using a different USB port.
+  - Ensure that you are using a data-capable USB cable (some cables are power-only).
+- **Reset the Board**:
+  - If your ESP32-C3 does not respond after uploading a sketch, try manually resetting the board by pressing the reset button.
+- **Use Serial Monitor**:
+  - After uploading a sketch, open the Serial Monitor (`Tools > Serial Monitor`) to view any output. Make sure the baud rate is set to 115200 to match the `Serial.begin(115200);` statement in your code.
 - **Further Resources**:
   - [ESP32 Troubleshooting Guide](https://docs.espressif.com/projects/esp-idf/en/latest/esp32/troubleshooting.html)
 
