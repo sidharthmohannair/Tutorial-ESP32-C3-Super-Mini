@@ -135,6 +135,8 @@ Before getting started, ensure you have the following components:
 
 2. Go to **Tools > Port** and select the corresponding serial port for your device. This will usually be **COM3** or higher on Windows, and `/dev/ttyUSBx` or `/dev/ttyACMx` on Linux/macOS. 
 
+    ![ESP32 C3 Super Mini COM port](/images/com_port.png)
+
     **Optional: Enable USB CDC on Boot**
     If you are experiencing issues with serial communication or your device is not being recognized correctly after a reset, you can enable the "USB CDC on Boot" option:
 
