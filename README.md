@@ -71,14 +71,62 @@ The ESP32-C3 series supports the following interfaces:
 
 ## Getting Started
 
+### Hardware Requirements
+
+Before getting started, ensure you have the following components:
+
+- **ESP32-C3 Super Mini**
+- **Computer** (Windows, macOS, or Linux)
+- **USB Type-C data cable**
+
+> **Tip:** Some USB cables only provide power without data transfer capabilities. If you're unsure whether your cable supports data transfer, consider purchasing a Type-C cable specifically designed for this purpose.
+
+
 ### Arduino IDE Setup
-1. **Install the Arduino IDE** from [Arduino's official website](https://www.arduino.cc/en/software).
-2. **Add ESP32 board support** to the Arduino IDE:
-   - Open the Arduino IDE, go to File > Preferences.
-   - In the "Additional Board Manager URLs" field, add: `https://raw.githubusercontent.com/espressif/arduino-esp32/gh-pages/package_esp32_index.json`
-   - Go to Tools > Board > Board Manager, search for "ESP32", and install the latest version by Espressif Systems.
-3. **Select the ESP32-C3 Super Mini** board from Tools > Board > ESP32 Arduino > ESP32C3 Dev Module.
-4. **Connect the board** to your computer via USB.
+
+### Step 1: Install the Arduino IDE
+
+1. Download the latest version of the Arduino IDE from [Arduino's official website](https://www.arduino.cc/en/software).
+    ![Arduino IDE](https://www.nologo.tech/assets/img/arduino/other/ArduinoIDE.png)
+
+    > **Note:** If you're experiencing slow download speeds, consider using alternative download links provided by local Arduino communities.
+2. Install the Arduino IDE following the instructions for your operating system.
+
+### Step 2: Configure the Arduino IDE for ESP32-C3 Super Mini
+
+### I. Adding ESP32 Board Support
+
+1. Open the Arduino IDE.
+2. Navigate to **File > Preferences**.
+3. In the "Additional Board Manager URLs" field, paste the following URL:
+   ```
+   https://raw.githubusercontent.com/espressif/arduino-esp32/gh-pages/package_esp32_index.json
+   ```
+4. Click **OK** to save your preferences.
+
+### II. Installing the ESP32 Board Package
+
+1. Go to **Tools > Board > Board Manager**.
+2. In the search bar, type "ESP32".
+3. Locate **"ESP32 by Espressif Systems"** and click **Install** to add the board package.
+
+### III. Selecting the ESP32-C3 Super Mini Board
+
+1. After installation, navigate to **Tools > Board > ESP32 Arduino**.
+2. Scroll down and select **ESP32C3 Dev Module**.
+
+### Step 3: Set Up the Serial Port
+
+1. Connect your ESP32-C3 Super Mini to the computer.
+2. Go to **Tools > Port** and select the corresponding serial port for your device. This will usually be **COM3** or higher on Windows, and `/dev/ttyUSBx` or `/dev/ttyACMx` on Linux/macOS. 
+
+### Step 4: Verify the Setup
+
+1. Open a new sketch in the Arduino IDE.
+2. Add a simple example like the Blink sketch ([Blink Project](/docs/examples/Blink/README.md)).
+3. Click **Upload** to send the sketch to your ESP32-C3.
+
+If everything is set up correctly, the LED on the ESP32-C3 should start blinking, indicating that the upload was successful.
 
 ## Example Projects
 - **Blink LED**: A basic example to blink an LED.
