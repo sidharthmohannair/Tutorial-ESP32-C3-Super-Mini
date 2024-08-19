@@ -98,13 +98,11 @@ Before getting started, ensure you have the following components:
 
 1. Open the Arduino IDE.
 2. Navigate to **File > Preferences**.
-
-    ![ESP32 super mini add board URL](/images/add_board.jpeg)
-
 3. In the "Additional Board Manager URLs" field, paste the following URL:
    ```
    https://raw.githubusercontent.com/espressif/arduino-esp32/gh-pages/package_esp32_index.json
    ```
+      ![ESP32 super mini add board URL](/images/add_board.jpeg)
 4. Click **OK** to save your preferences.
 
 ### II. Installing the ESP32 Board Package
@@ -120,6 +118,8 @@ Before getting started, ensure you have the following components:
 
 1. After installation, navigate to **Tools > Board > ESP32 Arduino**.
 2. Scroll down and select **ESP32C3 Dev Module**.
+
+    ![ESP32 super mini add ESP32](/images/supermini_setup.png)
 
 ### Step 3: Set Up the Serial Port
 
