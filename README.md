@@ -98,6 +98,9 @@ Before getting started, ensure you have the following components:
 
 1. Open the Arduino IDE.
 2. Navigate to **File > Preferences**.
+
+    ![ESP32 super mini add board URL](/images/add_board.jpeg)
+
 3. In the "Additional Board Manager URLs" field, paste the following URL:
    ```
    https://raw.githubusercontent.com/espressif/arduino-esp32/gh-pages/package_esp32_index.json
@@ -108,6 +111,9 @@ Before getting started, ensure you have the following components:
 
 1. Go to **Tools > Board > Board Manager**.
 2. In the search bar, type "ESP32".
+
+    ![ESP32 super mini add ESP32](/images/add_esp32c3.jpeg)
+
 3. Locate **"ESP32 by Espressif Systems"** and click **Install** to add the board package.
 
 ### III. Selecting the ESP32-C3 Super Mini Board
@@ -118,6 +124,9 @@ Before getting started, ensure you have the following components:
 ### Step 3: Set Up the Serial Port
 
 1. Connect your ESP32-C3 Super Mini to the computer.
+
+    ![ESP32 super mini USB connect](/images/usbconnect.jpeg)
+
 2. Go to **Tools > Port** and select the corresponding serial port for your device. This will usually be **COM3** or higher on Windows, and `/dev/ttyUSBx` or `/dev/ttyACMx` on Linux/macOS. 
 
 ### Step 4: Verify the Setup
@@ -153,6 +162,8 @@ Contributions are welcome! Please fork this repository and submit a pull request
 ## References
 
 - [ESP32 C3 Super Mini Deatailed Board Summery](https://www.sudo.is/docs/esphome/boards/esp32c3supermini/#enter-bootloader-mode-to-program-over-usb)
+
+- [wiki.icbbuy.com for setup](https://wiki.icbbuy.com/doku.php?id=developmentboard:esp32-c3mini#schematic)
 
 - [Espressif datasheets](https://www.espressif.com/en/support/documents/technical-documents)
 
