@@ -77,7 +77,7 @@ This guide will walk you through its setup, pinout, and how to create projects u
 
 ---
 
-## **Getting Started** Started
+## **Getting Started**
 
 ### **Hardware Requirements**
 To get started with the ESP32-C3 Super Mini, you’ll need:
