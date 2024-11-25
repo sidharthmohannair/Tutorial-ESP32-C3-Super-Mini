@@ -32,8 +32,8 @@ The ESP32-C3 Super Mini is a compact development board based on the ESP32-C3 mic
 - **Operating Voltage**: 3.3V
 
 ## Pinout Diagram
-![Pinout Diagram Top](/images/esp32_c3_supermini_pinout_top.jpg)
-![Pinout Diagram Bottom](/images/esp32_c3_supermini_pinout_bot.jpg)
+![ESP32 C3 super mini pinout](/images/pinout%20ESP32_supermini.jpg "ESP32 C3 super mini pinout")
+
 
 ## Interfaces
 
